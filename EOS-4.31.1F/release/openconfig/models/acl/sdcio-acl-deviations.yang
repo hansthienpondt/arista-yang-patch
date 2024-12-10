@@ -30,15 +30,4 @@ module sdcio-acl-deviations {
     reference
       "1.0.0";
   }
-  deviation "/oc-acl:acl/oc-acl:interfaces/oc-acl:interface/oc-acl:ingress-acl-sets/oc-acl:ingress-acl-set/oc-acl:acl-entries" {
-    description
-      "Per-interface ACL state is not supported in EOS";
-    deviate not-supported;
-  }
-
-  deviation "/oc-acl:acl/oc-acl:interfaces/oc-acl:interface/oc-acl:egress-acl-sets/oc-acl:egress-acl-set/oc-acl:acl-entries" {
-    description
-      "Per-interface ACL state is not supported in EOS";
-    deviate not-supported;
-  }
 }
